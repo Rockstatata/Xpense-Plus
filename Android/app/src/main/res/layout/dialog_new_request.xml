@@ -1,0 +1,68 @@
+<!-- dialog_new_request.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <EditText
+        android:id="@+id/recipientUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface"
+        android:hint="Recipient Username" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:textColorHint="?attr/colorOnSurface"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount" />
+
+    <EditText
+        android:id="@+id/selectedDate"
+        android:textColorHint="?attr/colorOnSurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:textColor="?attr/colorOnSurface"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/account"
+        android:textColorHint="?attr/colorOnSurface"
+        android:layout_width="match_parent"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_height="wrap_content"
+        android:hint="Account" />
+
+    <EditText
+        android:id="@+id/note"
+        android:textColorHint="?attr/colorOnSurface"
+        android:layout_width="match_parent"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_height="wrap_content"
+        android:hint="Note" />
+
+    <RadioGroup
+        android:id="@+id/transactionTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface"
+        android:orientation="horizontal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:backgroundTint="@color/darkGreen"
+        android:id="@+id/sendRequestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="20dp"
+        android:text="Send Request" />
+</LinearLayout>

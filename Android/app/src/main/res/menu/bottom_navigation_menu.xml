@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_transactions"
+        android:icon="@drawable/transaction"
+        android:title="Transactions"
+        android:iconTint="@color/black"
+
+        />
+    <item
+        android:id="@+id/nav_Handshake"
+        android:icon="@drawable/hand_shake"
+        android:title="Handshake" />
+    <item
+        android:id="@+id/nav_discover"
+        android:icon="@drawable/ic_business"
+        android:title="Discover" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/user"
+        android:title="Profile" />
+</menu>

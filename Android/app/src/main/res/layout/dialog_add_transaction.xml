@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/lightGreen3"
+    android:layout_margin="16dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp"
+    android:background="@drawable/dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/transactionCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:textColor="?attr/colorOnSurface"
+            android:textColorHint="@color/darkGrey"
+            />
+
+        <EditText
+            android:id="@+id/transactionAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/darkGrey"/>
+
+        <EditText
+            android:id="@+id/transactionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:textColor="?attr/colorOnSurface"
+            android:inputType="none"
+            android:textColorHint="@color/darkGrey"/>
+
+        <EditText
+            android:id="@+id/transactionAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account"
+            android:textColor="?attr/colorOnSurface"
+            android:textColorHint="@color/darkGrey"/>
+
+        <EditText
+            android:id="@+id/transactionNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note"
+            android:textColor="?attr/colorOnSurface"
+            android:textColorHint="@color/darkGrey"/>
+
+        <RadioGroup
+            android:id="@+id/transactionTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/incomeRadioButton"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/darkGreen"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGrey"
+                android:text="Income" />
+
+            <RadioButton
+                android:id="@+id/expenseRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGrey"
+                android:buttonTint="@color/darkGreen"
+                android:text="Expense" />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveTransactionButton"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/darkGreen"
+            android:textColor="@color/white"
+            card_view:cornerRadius="30dp"
+            android:layout_height="wrap_content"
+            android:text="Save Transaction" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
